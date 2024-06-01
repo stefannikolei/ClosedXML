@@ -499,6 +499,7 @@ namespace ClosedXML.Tests.Excel
         }
 
         [Test]
+        [Platform("Win")]
         public void CanCorrectLoadWorkbookDefaultColumnWidth()
         {
             using (var stream = TestHelper.GetStreamFromResource(TestHelper.GetResourcePath(@"Examples\Styles\DefaultStyles.xlsx")))
@@ -521,6 +522,7 @@ namespace ClosedXML.Tests.Excel
         }
 
         [Test]
+        [Platform("Win")]
         public void CanCorrectLoadWorksheetBaseColumnWidth()
         {
             // default calibi font case
@@ -543,6 +545,7 @@ namespace ClosedXML.Tests.Excel
         }
 
         [Test]
+        [Platform("Win")]
         public void CanCorrectLoadWorksheetDefaultColumnWidth()
         {
             // worksheet has default column width.

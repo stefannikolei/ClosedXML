@@ -11,6 +11,7 @@ namespace ClosedXML.Tests.Graphics
         private readonly IXLGraphicEngine _engine = DefaultGraphicEngine.Instance.Value;
 
         [TestCase]
+        [Platform("Win")]
         public void CalculatedTextWidth()
         {
             var textFont = new DummyFont("Calibri", 20);
@@ -19,6 +20,7 @@ namespace ClosedXML.Tests.Graphics
         }
 
         [TestCase]
+        [Platform("Win")]
         public void CalculatedTextHeight()
         {
             var textFont = new DummyFont("Calibri", 300);
@@ -27,6 +29,7 @@ namespace ClosedXML.Tests.Graphics
         }
 
         [TestCase]
+        [Platform("Win")]
         public void GetMaxDigitWidth()
         {
             var textFont = new DummyFont("Calibri", 11);
@@ -35,6 +38,7 @@ namespace ClosedXML.Tests.Graphics
         }
 
         [TestCase]
+        [Platform("Win")]
         public void DescentIsPositive()
         {
             var textFont = new DummyFont("Calibri", 11);

@@ -79,6 +79,7 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void UsingRichText()
         {
             TestHelper.RunTestExample<UsingRichText>(@"Styles\UsingRichText.xlsx");

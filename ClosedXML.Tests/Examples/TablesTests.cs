@@ -7,12 +7,14 @@ namespace ClosedXML.Tests.Examples
     public class TablesTests
     {
         [Test]
+        [Platform("Win")]
         public void InsertingTables()
         {
             TestHelper.RunTestExample<InsertingTables>(@"Tables\InsertingTables.xlsx");
         }
 
         [Test]
+        [Platform("Win")]
         public void ResizingTables()
         {
             TestHelper.RunTestExample<ResizingTables>(@"Tables\ResizingTables.xlsx");
