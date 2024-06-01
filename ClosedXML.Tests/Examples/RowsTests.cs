@@ -8,6 +8,7 @@ namespace ClosedXML.Tests.Examples
     public class RowsTests
     {
         [Test]
+        [Platform("Win")]
         public void RowCells()
         {
             TestHelper.RunTestExample<RowCells>(@"Rows\RowCells.xlsx");

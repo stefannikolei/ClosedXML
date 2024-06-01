@@ -241,6 +241,7 @@ namespace ClosedXML.Tests.Excel.Saving
         }
 
         [Test]
+        [Platform("Win")]
         public void CannotSaveAsOverwriteExistingReadOnlyFile()
         {
             using (var existing = new TemporaryFile())
@@ -493,6 +494,7 @@ namespace ClosedXML.Tests.Excel.Saving
         }
 
         [Test]
+        [Platform("Win")]
         public void PreserveWidthOfEmptyColumnsOnSaving()
         {
             using (var ms = new MemoryStream())
@@ -842,6 +844,7 @@ namespace ClosedXML.Tests.Excel.Saving
         }
 
         [Test]
+        [Platform("Win")]
         public void FormControlsArePreserved()
         {
             // The sheet contains three form controls: two radio buttons and group box.

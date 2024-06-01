@@ -20,6 +20,7 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void AdjustToContents()
         {
             TestHelper.RunTestExample<AdjustToContents>(@"Misc\AdjustToContents.xlsx");
@@ -50,6 +51,7 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void CellValues()
         {
             TestHelper.RunTestExample<CellValues>(@"Misc\CellValues.xlsx", true);
@@ -74,6 +76,7 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void DataTypes()
         {
             TestHelper.RunTestExample<DataTypes>(@"Misc\DataTypes.xlsx");
@@ -116,12 +119,14 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void Formulas()
         {
             TestHelper.RunTestExample<Formulas>(@"Misc\Formulas.xlsx");
         }
 
         [Test]
+        [Platform("Win")]
         public void FormulasWithEvaluation()
         {
             TestHelper.RunTestExample<FormulasWithEvaluation>(@"Misc\FormulasWithEvaluation.xlsx", true);
@@ -152,6 +157,7 @@ namespace ClosedXML.Tests.Examples
         }
 
         [Test]
+        [Platform("Win")]
         public void InsertingData()
         {
             TestHelper.RunTestExample<InsertingData>(@"Misc\InsertingData.xlsx");

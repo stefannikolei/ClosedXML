@@ -7,6 +7,7 @@ namespace ClosedXML.Tests.Examples
     public class CommentsTests
     {
         [Test]
+        [Platform("Win")]
         public void AddingComments()
         {
             TestHelper.RunTestExample<AddingComments>(@"Comments\AddingComments.xlsx");

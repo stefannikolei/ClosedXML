@@ -29,6 +29,7 @@ namespace ClosedXML.Tests.Excel.Caching
         }
 
         [Test]
+        [Platform("Win,Net-4.0")]
         public void NonUsedReferencesAreGCed()
         {
 #if !DEBUG
