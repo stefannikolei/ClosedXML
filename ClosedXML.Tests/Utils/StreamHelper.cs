@@ -12,7 +12,9 @@ namespace ClosedXML.Tests
     public static class StreamHelper
     {
         private static readonly XName colTagName = XName.Get("col", @"http://schemas.openxmlformats.org/spreadsheetml/2006/main");
+        private static readonly XName sheetFormatPrName = XName.Get("sheetFormatPr", @"http://schemas.openxmlformats.org/spreadsheetml/2006/main");
         private static readonly XName widthAttrName = XName.Get("width");
+        private static readonly XName defaultColWidthAttrName = XName.Get("defaultColWidth");
 
         private static readonly IEnumerable<(string PartSubstring, XName NodeName)> ignoredNodes = new List<(string PartSubstring, XName NodeName)>
         {
@@ -133,7 +135,10 @@ namespace ClosedXML.Tests
                 document.Descendants(ignoredAttr.NodeName).Attributes(ignoredAttr.AttrName).Remove();
 
             if (stripColumnWidths)
+            {
                 document.Descendants(colTagName).Attributes(widthAttrName).Remove();
+                document.Descendants(sheetFormatPrName).Attributes(defaultColWidthAttrName).Remove();
+            }
         }
 
         private static void Normalize(XDocument document)
